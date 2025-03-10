@@ -26,7 +26,7 @@ $(REALTIME_FILE_MONITOR_BIN): $(REALTIME_FILE_MONITOR_SRC)
 	$(CC) $(REALTIME_FILE_MONITOR_SRC) $(CFLAGS) -o $(REALTIME_FILE_MONITOR_BIN)
 
 format:
-	clang-format -i --style=file $(CLIENT_SRC) $(SERVER_SRC) $(REALTIME_FILE_MONITOR_SRC)
+	clang-format -i --style=file $(CLIENT_SRC) $(SERVER_SRC) $(REALTIME_FILE_MONITOR_SRC) src/util.h src/core.h
 
 clean:
 	rm -rf $(BUILD_DIR)
